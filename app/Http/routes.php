@@ -20,70 +20,14 @@ Route::get('/servers', "ServerController@index");
 
 Route::get('/auth', function() {
 
-    $client_id =env('AZURE_CLIENT_ID', false);
-    $pass = env('AZURE_PASS_KEY', false);
-    $tenant_id = env('AZURE_TENANT_ID', false);
+    $subscription_id = "c677219f-0cde-4d57-8fc0-272dda524ae9";
+    $resource_group_name = "DST_dedicated_server";
+    $vm_name = "DSTGreiiGreilor";
 
-    // Password
-    $clientSecret = urlencode($pass);
-    // Information about the resource we need access for which in this case is graph.
-    $graphId = 'https://management.core.windows.net/';
-
-    $graphPrincipalId = urlencode($graphId);
-    // Information about the app
-    $clientPrincipalId = urlencode($client_id);
-
-    // Construct the body for the STS request
-    $authenticationRequestBody = 'grant_type=client_credentials&client_secret='.$clientSecret
-        .'&'.'resource='.$graphPrincipalId.'&'.'client_id='.$clientPrincipalId;
-
-    //Using curl to post the information to STS and get back the authentication response
-    $ch = curl_init();
-    // set url
-    $stsUrl = 'https://login.microsoftonline.com/'.$tenant_id.'/oauth2/token';
-    curl_setopt($ch, CURLOPT_URL, $stsUrl);
-    // Get the response back as a string
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    // Mark as Post request
-    curl_setopt($ch, CURLOPT_POST, 1);
-    // Set the parameters for the request
-    curl_setopt($ch, CURLOPT_POSTFIELDS,  $authenticationRequestBody);
-
-    // By default, HTTPS does not work with curl.
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-
-    // read the output from the post request
-    $output = curl_exec($ch);
-    // close curl resource to free up system resources
-    curl_close($ch);
-    // decode the response from sts using json decoder
-    $tokenOutput = json_decode($output);
-
-    var_dump($tokenOutput);
-    echo "<br><br>";
-
-    $cha = curl_init();
-    $api_version = '?api-version=2015-01-01';
-    $url = "https://management.azure.com/subscriptions/SUBSCRIPTION_ID/resourcegroups";
-
-    $auth = 'Authorization:' . $tokenOutput->{'token_type'}.' '.$tokenOutput->{'access_token'};
-    // Add authorization and other headers. Also set some common settings.
-    curl_setopt($cha, CURLOPT_HTTPHEADER, array($auth,  'Content-Type: application/json'));
-    // Set the option to recieve the response back as string.
-    curl_setopt($cha, CURLOPT_RETURNTRANSFER, 1);
-    // By default https does not work for CURL.
-    curl_setopt($cha, CURLOPT_SSL_VERIFYPEER, false);
-    // set url
-    $feedURL = "https://management.azure.com/subscriptions".$api_version;
-    curl_setopt($cha, CURLOPT_URL, $feedURL);
-
-    // $output contains the output string
-    $output = curl_exec($cha);
-    // close curl resource to free up system resources
-    curl_close($cha);
-    $jsonOutput = json_decode($output);
-    // There is a field for odata metadata that we ignore and just consume the value
-    var_dump($jsonOutput);
+    $vmOperator = new \App\Helpers\AzureVmOperationsHandler($subscription_id, $resource_group_name);
+    $vm_info = $vmOperator->startVM($vm_name);
+    
+    var_dump($vm_info);
 
 });
 /*

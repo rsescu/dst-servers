@@ -21,6 +21,9 @@ class AzureAuthenticator
         //no token exists or token is expired, request a new one and override the expired one
         //since key is new, just return it
         self::$resourceMap[$key] = self::requestAuthenticationToken($resource);
+        if(!self::$resourceMap[$key]["token"]) {
+            
+        }
         return self::$resourceMap[$key]["token"];
 
 

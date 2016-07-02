@@ -12,13 +12,16 @@ class ServerTableSeeder extends Seeder
     public function run()
     {
         DB::table('servers')->delete();
-        $users = [
+        $servers = [
             [
                 'server_id' => 1,
                 'game_id'   => 1,
+                'host_id'   => 1,
+                'user_id'   => 1,
                 'name'      => 'Greii Greilor',
+                'run_script'  => 'sh ~/run_dst_rby_cluster.sh',
             ]
         ];
-        DB::table('servers')->insert($users);
+        DB::table('servers')->insert($servers);
     }
 }

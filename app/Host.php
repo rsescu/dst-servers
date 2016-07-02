@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Helpers\AzureVmOperationsHandler;
 use Illuminate\Database\Eloquent\Model;
 
 class Host extends Model
@@ -10,7 +11,7 @@ class Host extends Model
 
     public function servers()
     {
-        $this->hasMany('App\Server');
+        return $this->hasMany('App\Server', 'server_id', 'host_id');
     }
 
 }

@@ -49,6 +49,11 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                     <li><a href="{{ url('/servers') }}">Servers</a></li>
+                    @if (!Auth::guest())
+                        @if(Auth::user()->role_id == 1)
+                    <li><a href="{{ url('/hosts') }}">Hosts</a></li>
+                    @endif
+                    @endif
                 </ul>
 
                 <!-- Right Side Of Navbar -->

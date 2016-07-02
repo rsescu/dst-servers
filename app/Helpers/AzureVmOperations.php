@@ -25,6 +25,18 @@ class AzureVmOperationsHandler
     {
         return $this->authenticationToken;
     }
+    
+    public function getVMStatus($vm_name)
+    {
+        foreach($this->getVMInformation($vm_name)->statuses as $status) {
+            //TODO remove hardcode
+            if( strpos( $status->code, "PowerState" ) === 0 ){
+                return $status->displayStatus;
+            }
+        }
+        //TODO maybe handle differently
+        return "No status available";
+    }
 
     /**
      * Common requirements as described https://msdn.microsoft.com/en-us/library/azure/mt163630.aspx#bk_common
@@ -117,6 +129,7 @@ class AzureVmOperationsHandler
         $curl = $this->prepareStandardCurlRequest();
         curl_setopt($curl, CURLOPT_POST, 1);
         curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, "");
         $output = curl_exec($curl);
         $response_status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
         curl_close($curl);
@@ -127,25 +140,4 @@ class AzureVmOperationsHandler
             return "Status: $response_status\n".$output;
         }
     }
-
-    /* TODO
-        Add or update an extension
-        Create an availability set
-        Create or update a VM
-        Delete an availability set
-        Delete an extension
-        Delete a VM
-        Generalize a VM
-        Get availability set information
-        Get extension information
-        List available VM sizes in an availability set
-        List available VM sizes in a region
-        List available VM sizes for resizing
-        List availability sets in a resource group
-        List VMs in a resource group
-        Restart a VM
-        Save an image from a VM
-        Stop a VM
-        Stop and deallocate a VM
-     */
 }

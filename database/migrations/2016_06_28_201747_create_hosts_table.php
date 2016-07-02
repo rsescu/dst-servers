@@ -14,9 +14,9 @@ class CreateHostsTable extends Migration
     {
         Schema::create('hosts', function (Blueprint $table){
             $table->increments("host_id");
-            $table->string("server_id")->references('server_id')->on('servers');
             $table->string("name");
             $table->string("external_ip")->unique();
+            // TODO type, vendor
         });
     }
 

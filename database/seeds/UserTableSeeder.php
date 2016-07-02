@@ -14,9 +14,11 @@ class UserTableSeeder extends Seeder
         DB::table('users')->delete();
         $users = [
             [
+                'user_id'   => 1,
                 'name'      => 'Robert',
                 'email'     => 'r.sescu@gmail.com',
                 'password'  => Hash::make('test'),
+                'role_id'   => 1,
             ]
         ];
         DB::table('users')->insert($users);

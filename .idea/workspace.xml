@@ -2,14 +2,173 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1ce9d33-6e5e-4024-b25f-de1184da13d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Helpers/AzureVmOperations.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/hosts.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DSTServers.iml" afterPath="$PROJECT_DIR$/.idea/DSTServers.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/HostsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/seeds/RoleTableSeeder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/errors/403.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/HostServerController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/seeds/OwnerTableSeeder.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2016_06_28_201733_create_servers_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_06_28_201749_create_servers_table.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2016_06_28_222135_create_owners_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_07_01_221958_create_roles_table.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/Dont_Starve_Together_Logo.png" afterPath="$PROJECT_DIR$/resources/assets/images/Dont_Starve_Together_Logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php" afterPath="$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Helpers/AzureVmOperations.php" afterPath="$PROJECT_DIR$/app/Helpers/AzureVmOperations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Host.php" afterPath="$PROJECT_DIR$/app/Host.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ServerController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ServerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Server.php" afterPath="$PROJECT_DIR$/app/Server.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_06_25_193359_create_games_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_06_25_193359_create_games_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_06_28_201747_create_hosts_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_06_28_201747_create_hosts_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_06_28_222146_create_admins_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_06_28_222146_create_admins_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/GameTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/GameTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/HostsTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/HostsTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ServerTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ServerTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/hosts.blade.php" afterPath="$PROJECT_DIR$/resources/views/hosts.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/servers.blade.php" afterPath="$PROJECT_DIR$/resources/views/servers.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/ErrorHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/ErrorHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FingersCrossedHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FingersCrossedHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/GroupHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/GroupHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/NewRelicHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/NewRelicHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RotatingFileHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RotatingFileHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Application.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Exception/CommandNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Exception/CommandNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/HelperSet.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/HelperSet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressBar.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressBar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/SymfonyQuestionHelper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/SymfonyQuestionHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableSeparator.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/TableSeparator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/ArgvInput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/ArgvInput.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/ArrayInput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/ArrayInput.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/Input.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/Input.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/InputInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/InputInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/NullOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/NullOutput.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/Output.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/Output.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Question/ChoiceQuestion.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Question/ChoiceQuestion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Style/SymfonyStyle.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Style/SymfonyStyle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tester/ApplicationTester.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tester/ApplicationTester.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tester/CommandTester.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tester/CommandTester.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_11.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_11.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_11.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_11.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProgressBarTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/ProgressBarTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputDefinitionTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/InputDefinitionTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Style/SymfonyStyleTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Style/SymfonyStyleTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/CssSelectorConverter.php" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/CssSelectorConverter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/ErrorHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/ErrorHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/ExceptionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/ExceptionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/DebugClassLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/DebugClassLoaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Crawler.php" afterPath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Crawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Form.php" afterPath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/dom-crawler/FormFieldRegistry.php" afterPath="$PROJECT_DIR$/vendor/symfony/dom-crawler/FormFieldRegistry.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Tests/FormTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/dom-crawler/Tests/FormTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Event.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Event.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/EventDispatcher.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/EventDispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/EventDispatcherInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/EventDispatcherInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/GenericEvent.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/GenericEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Finder.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Finder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/Iterator/PathFilterIterator.php" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Iterator/PathFilterIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Cookie.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Cookie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/File.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/File.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/MimeTypeExtensionGuesser.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/MimeType/MimeTypeExtensionGuesser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/IpUtils.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/IpUtils.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/ParameterBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/ParameterBag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/RedirectResponse.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/RedirectResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/ResponseHeaderBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/ResponseHeaderBag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/NamespacedAttributeBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/NamespacedAttributeBag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBagInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBagInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Session.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionBagInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionBagInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcacheSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcacheSessionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/NativeFileSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/NativeFileSessionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MetadataBag.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MetadataBag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockArraySessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockArraySessionStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Proxy/NativeProxy.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Proxy/NativeProxy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/SessionStorageInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/SessionStorageInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheClearer/CacheClearerInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheClearer/CacheClearerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/DumpListener.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/DumpListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/ExceptionListener.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/ExceptionListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpCache/Esi.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpCache/Esi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpCache/Ssi.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpCache/Ssi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/KernelInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/KernelInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Profiler/Profiler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Profiler/Profiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/HttpKernelTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/HttpKernelTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/Pipes/PipesInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Pipes/PipesInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/Pipes/WindowsPipes.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Pipes/WindowsPipes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/Process.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Process.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Annotation/Route.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Annotation/Route.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/symfony/routing/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Loader/AnnotationDirectoryLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Loader/AnnotationDirectoryLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Loader/XmlFileLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Loader/XmlFileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Matcher/Dumper/DumperCollection.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Matcher/Dumper/DumperCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Matcher/RedirectableUrlMatcherInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Matcher/RedirectableUrlMatcherInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/RouteCollection.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/RouteCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/Router.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Loader/MoFileLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Loader/MoFileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Loader/XliffFileLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Loader/XliffFileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Loader/XliffFileLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Loader/XliffFileLoaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/PluralizationRulesTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/PluralizationRulesTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/TranslatorTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/TranslatorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/Caster.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/Caster.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/AbstractCloner.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/AbstractCloner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/ClonerInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/ClonerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Data.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Data.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/DumperInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/DumperInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/AbstractDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/AbstractDumper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/CliDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/CliDumper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/DataDumperInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/DataDumperInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/HtmlDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/HtmlDumper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Dumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Dumper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Escaper.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Escaper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Inline.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Inline.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/DumperTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/DumperTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/InlineTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Tests/InlineTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Unescaper.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Unescaper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Yaml.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Yaml.php" />
     </list>
     <ignored path="DSTServers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,23 +190,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="375">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ServerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1170">
+              <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
               <folding>
-                <marker date="1467403643000" expanded="true" signature="927:1384" ph="..." />
+                <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AzureVmOperations.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Helpers/AzureVmOperations.php">
+      <file leaf-file-name="servers.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/servers.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="830">
-              <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
+            <state relative-caret-position="240">
+              <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hosts.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/hosts.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SSH2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SSH2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="2832" column="23" selection-start-line="2832" selection-start-column="13" selection-end-line="2832" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -56,28 +245,28 @@
       <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="52" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="52" />
+            <state relative-caret-position="510">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <file leaf-file-name="Server.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="2016_06_28_201749_create_servers_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_201749_create_servers_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -86,18 +275,8 @@
       <file leaf-file-name="AzureAuthenticator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="201">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -106,19 +285,11 @@
       <file leaf-file-name="HostsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Host.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Host.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="291">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+              <folding>
+                <element signature="e#40#81#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,39 +307,51 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_06_25_192059_game.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HostServerController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_25_195708_update_user_id_column.php" />
-        <option value="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_25_193359_crate_games_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_201747_create_hosts_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_201733_create_servers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_28_205127_create_server_user_table.php" />
         <option value="$PROJECT_DIR$/app/Game.php" />
-        <option value="$PROJECT_DIR$/app/Host.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_28_211715_create_owners_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_28_211516_create_admins_table.php" />
-        <option value="$PROJECT_DIR$/app/Server.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_06_25_193359_create_games_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/GameTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/HostsTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/AdminTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_222146_create_admins_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_222135_create_owners_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ServerTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/OwnerTableSeeder.php" />
+        <option value="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_07_01_221958_create_role_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/RoleTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/resources/views/unauthorized.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/errors/403.blade.php" />
+        <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_201733_create_servers_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_201747_create_hosts_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/HostsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_222135_create_owners_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_222146_create_admins_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_07_01_221958_create_roles_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/resources/views/servers.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ServerController.php" />
+        <option value="$PROJECT_DIR$/app/Host.php" />
+        <option value="$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php" />
+        <option value="$PROJECT_DIR$/app/Helpers/AzureVmOperations.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/hosts.blade.php" />
+        <option value="$PROJECT_DIR$/app/Server.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
+        <option value="$PROJECT_DIR$/database/seeds/GameTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_06_25_193359_create_games_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_06_28_201749_create_servers_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ServerTableSeeder.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SSH2.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HostsController.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Helpers/AzureVmOperations.php" />
+        <option value="$PROJECT_DIR$/resources/views/hosts.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/servers.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ServerController.php" />
       </list>
     </option>
   </component>
@@ -195,6 +378,100 @@
     <option name="y" value="23" />
     <option name="width" value="1390" />
     <option name="height" value="877" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Blade files</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code SmellPHP</id>
+          </State>
+          <State>
+            <id>Code StylePHP</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HAML</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>JSON</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -223,7 +500,218 @@
     <panes>
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Requests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSTServers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -231,12 +719,16 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="settings&#9;ACTION&#9;Database.Settings&#10;debugg&#9;ACTION&#9;DebugMainMenu&#10;auto&#9;FILE&#9;file:///Users/robet/Work/DSTServers/vendor/composer/autoload_classmap.php&#10;com&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;hosts&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HostsController.php&#10;host&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Host.php&#10;route&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/routes.php&#10;.env&#9;FILE&#9;file:///Users/robet/Work/DSTServers/.env&#10;logi&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/auth/login.blade.php&#10;serv&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/servers.blade.php&#10;serve&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;app.b&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/layouts/app.blade.php&#10;server&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;HomeC&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HomeController.php&#10;servercin&#9;null&#9;null&#10;ServerContr&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;routes&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/routes.php&#10;ServerCon&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;Eloq&#9;null&#9;null&#10;user&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/layouts/app.blade.php&#10;login&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/auth/login.blade.php&#10;userTab&#9;null&#9;null&#10;Server&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;Home&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/home.blade.php&#10;ServerCo&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HostServerController.php&#10;composer&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;compose&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;composer.js&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;routes.php&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/routes.php" />
-    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+    <property name="SearchEverywhereHistoryKey" value="hosts.bl&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/hosts.blade.php&#10;server&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/servers.blade.php&#10;azure&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Helpers/AzureAuthenticator.php&#10;env&#9;FILE&#9;file:///Users/robet/Work/DSTServers/.env&#10;hosts&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HostsController.php&#10;hostc&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HostsController.php&#10;host&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HostsController.php&#10;composer&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;route&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/routes.php&#10;serverc&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;VerifyCsrfToken.php&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Middleware/VerifyCsrfToken.php&#10;serverco&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;servercon&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;rolemid&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Middleware/RoleMiddleware.php&#10;rolemi&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Middleware/RoleMiddleware.php&#10;host.&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/hosts.blade.php&#10;compos&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;rout&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/routes.php&#10;HOSTSCON&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HostsController.php&#10;User&#9;null&#9;null&#10;server contr&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;Server&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Server.php&#10;Host&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Host.php&#10;kerne&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Kernel.php&#10;auth&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/Auth/AuthController.php&#10;settings&#9;ACTION&#9;Database.Settings&#10;debugg&#9;ACTION&#9;DebugMainMenu&#10;auto&#9;FILE&#9;file:///Users/robet/Work/DSTServers/vendor/composer/autoload_classmap.php&#10;com&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;.env&#9;FILE&#9;file:///Users/robet/Work/DSTServers/.env&#10;logi&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/auth/login.blade.php&#10;serv&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/servers.blade.php&#10;serve&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;app.b&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/layouts/app.blade.php&#10;HomeC&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HomeController.php&#10;servercin&#9;null&#9;null&#10;ServerContr&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;routes&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/routes.php&#10;ServerCon&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/ServerController.php&#10;Eloq&#9;null&#9;null&#10;user&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/layouts/app.blade.php&#10;login&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/auth/login.blade.php&#10;userTab&#9;null&#9;null&#10;Home&#9;FILE&#9;file:///Users/robet/Work/DSTServers/resources/views/home.blade.php&#10;ServerCo&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/Controllers/HostServerController.php&#10;compose&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;composer.js&#9;FILE&#9;file:///Users/robet/Work/DSTServers/composer.json&#10;routes.php&#9;FILE&#9;file:///Users/robet/Work/DSTServers/app/Http/routes.php" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/errors" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/assets/images" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
@@ -305,7 +797,7 @@
       <updated>1466859026711</updated>
       <workItem from="1466859027896" duration="2903000" />
       <workItem from="1466879900807" duration="4955000" />
-      <workItem from="1466934163361" duration="57862000" />
+      <workItem from="1466934163361" duration="103721000" />
     </task>
     <task id="LOCAL-00001" summary="Project initialization&#10;">
       <created>1466859897017</created>
@@ -321,17 +813,24 @@
       <option name="project" value="LOCAL" />
       <updated>1467184699377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added  helper classes to for handling Azure requests">
+      <created>1467404553111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467404553111</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65720000" />
+    <option name="totallyTimeSpent" value="111579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="23" width="1390" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -341,7 +840,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39975247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39975247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -371,8 +870,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39975247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -388,139 +887,39 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Project initialization&#10;" />
     <MESSAGE value="Initialise DB and set up models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialise DB and set up models" />
+    <MESSAGE value="Added  helper classes to for handling Azure requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added  helper classes to for handling Azure requests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php</url>
-          <line>11</line>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Foundation/Application.php">
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        <state relative-caret-position="-9">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_5.php">
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_static.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="417" column="9" selection-start-line="417" selection-start-column="9" selection-end-line="417" selection-end-column="9" />
+        <state relative-caret-position="111">
+          <caret line="3318" column="87" selection-start-line="3318" selection-start-column="87" selection-end-line="3318" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/microsoft/windowsazure/WindowsAzure/Common/ServicesBuilder.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="245" column="20" selection-start-line="245" selection-start-column="20" selection-end-line="245" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6180">
-          <caret line="426" column="20" selection-start-line="426" selection-start-column="20" selection-end-line="426" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_25_195708_update_user_id_column.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="71" column="19" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_205127_create_server_user_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_211516_create_admins_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_211715_create_owners_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_201747_create_hosts_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="80" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_201733_create_servers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_25_193359_create_games_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="41" />
+        <state relative-caret-position="-2865">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -533,82 +932,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/HostsTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/GameTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/AdminTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_222135_create_owners_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="225">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/OwnerTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="21" selection-end-column="43" />
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="20" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ServerTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_222146_create_admins_table.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Game.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/RoleTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="e#28#67#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -621,6 +998,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/errors/503.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="1081" column="0" selection-start-line="1081" selection-start-column="0" selection-end-line="1081" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/errors/403.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/unauthorized.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="636" column="0" selection-start-line="636" selection-start-column="0" selection-end-line="636" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_07_01_221958_create_roles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_222135_create_owners_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_222146_create_admins_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -629,197 +1110,210 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/servers.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="26" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ServerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/hosts.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <marker date="1467230154000" expanded="true" signature="71:992" ph="..." />
-            <marker date="1467230154000" expanded="true" signature="97:981" ph="..." />
-            <marker date="1467230154000" expanded="true" signature="149:966" ph="..." />
-            <marker date="1467230154000" expanded="true" signature="199:947" ph="..." />
-            <marker date="1467230154000" expanded="true" signature="312:563" ph="..." />
-            <marker date="1467230154000" expanded="true" signature="341:536" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artisan">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="315">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Host.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#64#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3564">
-          <caret line="237" column="39" selection-start-line="237" selection-start-column="33" selection-end-line="237" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_static.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="3348" column="106" selection-start-line="3348" selection-start-column="106" selection-end-line="3348" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" column="52" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="52" />
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#51#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Helpers/AzureVmOperations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
-          <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
+        <state relative-caret-position="225">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/HostsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/GameTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_25_193359_create_games_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_201747_create_hosts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ServerTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="e#40#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_28_201749_create_servers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Helpers/AzureAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SSH2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="2832" column="23" selection-start-line="2832" selection-start-column="13" selection-end-line="2832" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="375">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/hosts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/servers.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ServerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
           <folding>
-            <marker date="1467403643000" expanded="true" signature="927:1384" ph="..." />
+            <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

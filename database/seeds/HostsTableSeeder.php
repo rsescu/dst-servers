@@ -15,8 +15,7 @@ class HostsTableSeeder extends Seeder
         $hosts = [
             [
                 'host_id'   => 1,
-                'server_id' => 1,
-                'name'      => 'Azure VM',
+                'name'      => 'DSTGreiiGreilor',
                 'external_ip'  => '40.114.196.95',
             ]
         ];

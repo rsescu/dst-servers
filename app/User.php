@@ -30,7 +30,8 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Server', 'admins', 'user_id', 'server_id');
     }
 
-    public function ownsServer(){
+    public function ownsServer()
+    {
         return $this->hasMany('App\Server', 'server_id', 'user_id');
     }
 }

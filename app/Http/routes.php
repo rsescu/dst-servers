@@ -18,26 +18,23 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/servers', "ServerController@index");
 
+Route::get('/hosts', "HostsController@index");
+
+
 Route::get('/auth', function() {
-
-    $subscription_id = "c677219f-0cde-4d57-8fc0-272dda524ae9";
-    $resource_group_name = "DST_dedicated_server";
-    $vm_name = "DSTGreiiGreilor";
-
-    $vmOperator = new \App\Helpers\AzureVmOperationsHandler($subscription_id, $resource_group_name);
-    $vm_info = $vmOperator->startVM($vm_name);
-    
-    var_dump($vm_info);
-
+    $running = \App\Http\Controllers\ServerController::serverCommands("40.114.196.95", "screen -list");
+    $aa = []; preg_match('/\d{3,6}\.(\d|\w)*\s*\(\d{2}\/\d{2}\/\d{4}\s\d{2}\:\d{2}\:\d{2}\s(PM|AM)\)/', $running, $aa);
+    echo $running."<br>";
+    var_dump($aa);
 });
-/*
- * POST /89d835ac-98f5-4a97-9389-fe67321c7e09/oauth2/token
-Host: login.microsoftonline.com
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 187
-Cache-Control: no-cache
-Postman-Token: 54980b86-aeda-c0d7-d67c-4655b1888bc9
-grant_type=client_credentials&client_id=2e973fd7-a805-493c-b42b-260040b83369&resource=http%253A%252F%252Fdstserverdeploymentapp.azurewebsites.net&client_secret=tunDlWj6xIbQPhAuR%2BTqQAH69iSzbCndWjZyFTZJViY%3D
- */
+
+Route::put('/hosts/{vmName}/start', "HostsController@startHost");
+
+Route::put('/hosts/{vmName}/stop', "HostsController@stopHost");
+
+Route::put('/servers/{serverId}/start', "ServerController@startServer");
+
+Route::put('/servers/{serverId}/stop', "ServerController@stopServer");
+
 
 

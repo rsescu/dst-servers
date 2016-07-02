@@ -13,9 +13,13 @@ class CreateAdminsTable extends Migration
     public function up()
     {
         Schema::create('admins', function (Blueprint $table) {
-            $table->integer('user_id')->references('user_id')->on('users');
-            $table->integer('server_id')->references('server_id')->on('servers');
+            $table->integer('user_id')->unsigned();
+            $table->integer('server_id')->unsigned();
             $table->primary(['user_id', 'server_id']);
+        });
+        Schema::table('admins', function (Blueprint $table) {
+            $table->foreign('user_id')->references('user_id')->on('users');
+            $table->foreign('server_id')->references('server_id')->on('servers');
         });
     }
 

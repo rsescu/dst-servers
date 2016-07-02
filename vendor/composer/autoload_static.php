@@ -16,11 +16,13 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'p' => 
         array (
+            'phpseclib\\' => 10,
             'phpDocumentor\\Reflection\\' => 25,
         ),
         'X' => 
@@ -91,6 +93,10 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
     );
 
     public static $prefixDirsPsr4 = array (
+        'phpseclib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -303,13 +309,13 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
         'App\\Http\\Controllers\\Auth\\PasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
-        'App\\Http\\Controllers\\HostServerController' => __DIR__ . '/../..' . '/app/Http/Controllers/HostServerController.php',
         'App\\Http\\Controllers\\HostsController' => __DIR__ . '/../..' . '/app/Http/Controllers/HostsController.php',
         'App\\Http\\Controllers\\ServerController' => __DIR__ . '/../..' . '/app/Http/Controllers/ServerController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
+        'App\\Http\\Middleware\\RoleMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/RoleMiddleware.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\Request' => __DIR__ . '/../..' . '/app/Http/Requests/Request.php',
         'App\\Jobs\\Job' => __DIR__ . '/../..' . '/app/Jobs/Job.php',
@@ -339,9 +345,9 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
         'CreateAdminsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_28_222146_create_admins_table.php',
         'CreateGamesTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_25_193359_create_games_table.php',
         'CreateHostsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_28_201747_create_hosts_table.php',
-        'CreateOwnersTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_28_222135_create_owners_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-        'CreateServersTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_28_201733_create_servers_table.php',
+        'CreateRolesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_01_221958_create_roles_table.php',
+        'CreateServersTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_28_201749_create_servers_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
@@ -1930,7 +1936,6 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
         'Monolog\\Processor\\UidProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Processor/UidProcessor.php',
         'Monolog\\Processor\\WebProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Processor/WebProcessor.php',
         'Monolog\\Registry' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Registry.php',
-        'OwnerTableSeeder' => __DIR__ . '/../..' . '/database/seeds/OwnerTableSeeder.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
@@ -2725,6 +2730,7 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
         'Psy\\VarDumper\\Dumper' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VarDumper/Dumper.php',
         'Psy\\VarDumper\\Presenter' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VarDumper/Presenter.php',
         'Psy\\VarDumper\\PresenterAware' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VarDumper/PresenterAware.php',
+        'RoleTableSeeder' => __DIR__ . '/../..' . '/database/seeds/RoleTableSeeder.php',
         'SebastianBergmann\\Comparator\\ArrayComparator' => __DIR__ . '/..' . '/sebastian/comparator/src/ArrayComparator.php',
         'SebastianBergmann\\Comparator\\Comparator' => __DIR__ . '/..' . '/sebastian/comparator/src/Comparator.php',
         'SebastianBergmann\\Comparator\\ComparisonFailure' => __DIR__ . '/..' . '/sebastian/comparator/src/ComparisonFailure.php',
@@ -2954,6 +2960,7 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
         'Symfony\\Component\\HttpFoundation\\ApacheRequest' => __DIR__ . '/..' . '/symfony/http-foundation/ApacheRequest.php',
         'Symfony\\Component\\HttpFoundation\\BinaryFileResponse' => __DIR__ . '/..' . '/symfony/http-foundation/BinaryFileResponse.php',
         'Symfony\\Component\\HttpFoundation\\Cookie' => __DIR__ . '/..' . '/symfony/http-foundation/Cookie.php',
+        'Symfony\\Component\\HttpFoundation\\Exception\\ConflictingHeadersException' => __DIR__ . '/..' . '/symfony/http-foundation/Exception/ConflictingHeadersException.php',
         'Symfony\\Component\\HttpFoundation\\ExpressionRequestMatcher' => __DIR__ . '/..' . '/symfony/http-foundation/ExpressionRequestMatcher.php',
         'Symfony\\Component\\HttpFoundation\\FileBag' => __DIR__ . '/..' . '/symfony/http-foundation/FileBag.php',
         'Symfony\\Component\\HttpFoundation\\File\\Exception\\AccessDeniedException' => __DIR__ . '/..' . '/symfony/http-foundation/File/Exception/AccessDeniedException.php',
@@ -3060,6 +3067,7 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
         'Symfony\\Component\\HttpKernel\\EventListener\\SurrogateListener' => __DIR__ . '/..' . '/symfony/http-kernel/EventListener/SurrogateListener.php',
         'Symfony\\Component\\HttpKernel\\EventListener\\TestSessionListener' => __DIR__ . '/..' . '/symfony/http-kernel/EventListener/TestSessionListener.php',
         'Symfony\\Component\\HttpKernel\\EventListener\\TranslatorListener' => __DIR__ . '/..' . '/symfony/http-kernel/EventListener/TranslatorListener.php',
+        'Symfony\\Component\\HttpKernel\\EventListener\\ValidateRequestListener' => __DIR__ . '/..' . '/symfony/http-kernel/EventListener/ValidateRequestListener.php',
         'Symfony\\Component\\HttpKernel\\Event\\FilterControllerEvent' => __DIR__ . '/..' . '/symfony/http-kernel/Event/FilterControllerEvent.php',
         'Symfony\\Component\\HttpKernel\\Event\\FilterResponseEvent' => __DIR__ . '/..' . '/symfony/http-kernel/Event/FilterResponseEvent.php',
         'Symfony\\Component\\HttpKernel\\Event\\FinishRequestEvent' => __DIR__ . '/..' . '/symfony/http-kernel/Event/FinishRequestEvent.php',
@@ -3340,6 +3348,30 @@ class ComposerStaticInitad22241d3ab6039b985b9e99c90a97ce
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+        'phpseclib\\Crypt\\AES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
+        'phpseclib\\Crypt\\Base' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
+        'phpseclib\\Crypt\\Blowfish' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',
+        'phpseclib\\Crypt\\DES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/DES.php',
+        'phpseclib\\Crypt\\Hash' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Hash.php',
+        'phpseclib\\Crypt\\RC2' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RC2.php',
+        'phpseclib\\Crypt\\RC4' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RC4.php',
+        'phpseclib\\Crypt\\RSA' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/RSA.php',
+        'phpseclib\\Crypt\\Random' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
+        'phpseclib\\Crypt\\Rijndael' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Rijndael.php',
+        'phpseclib\\Crypt\\TripleDES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/TripleDES.php',
+        'phpseclib\\Crypt\\Twofish' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Twofish.php',
+        'phpseclib\\File\\ANSI' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ANSI.php',
+        'phpseclib\\File\\ASN1' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ASN1.php',
+        'phpseclib\\File\\ASN1\\Element' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/ASN1/Element.php',
+        'phpseclib\\File\\X509' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/File/X509.php',
+        'phpseclib\\Math\\BigInteger' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Math/BigInteger.php',
+        'phpseclib\\Net\\SCP' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SCP.php',
+        'phpseclib\\Net\\SFTP' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP.php',
+        'phpseclib\\Net\\SFTP\\Stream' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP/Stream.php',
+        'phpseclib\\Net\\SSH1' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH1.php',
+        'phpseclib\\Net\\SSH2' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH2.php',
+        'phpseclib\\System\\SSH\\Agent' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php',
+        'phpseclib\\System\\SSH\\Agent\\Identity' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent/Identity.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

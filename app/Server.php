@@ -10,15 +10,21 @@ class Server extends Model
 
     public function isOfGame()
     {
-        return $this->belongsTo('App\Game');
+        return $this->belongsTo('App\Game', 'game_id');
     }
 
     public function admins()
     {
-        $this->belongsToMany('App\User', 'admins', 'server_id', 'user_id');
+        return $this->belongsToMany('App\User', 'admins', 'server_id', 'user_id');
     }
 
-    public function ownedBy(){
-        $this->belongsTo('App\User', 'owners', 'user_id');
+    public function ownedBy()
+    {
+        return $this->belongsTo('App\User');
+    }
+
+    public function hostedOn()
+    {
+        return $this->belongsTo('App\Host', 'host_id');
     }
 }

@@ -21,7 +21,9 @@ class ServerController extends Controller
         $user = env('VM_UNIX_USER', false);;
         $pass = env('VM_UNIX_PASS', false);;
         $ssh = new \phpseclib\Net\SSH2($ip);
-        if (!$ssh->login($user, $pass)) {
+        try {
+            $ssh->login($user, $pass);
+        }catch(\ErrorException $e) {
            return false;
         }
         $return = $ssh->exec($command);

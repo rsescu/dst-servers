@@ -13,7 +13,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'role_id'
     ];
 
     /**
@@ -22,7 +22,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token'
     ];
 
     public function administersServers()
@@ -34,4 +34,10 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Server', 'server_id', 'user_id');
     }
+
+    public function role()
+    {
+        return $this->belongsTo('App\Role', 'role_id');
+    }
+
 }

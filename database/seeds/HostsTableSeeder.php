@@ -15,7 +15,7 @@ class HostsTableSeeder extends Seeder
         $hosts = [
             [
                 'host_id'   => 1,
-                'name'      => 'DSTGreiiGreilor',
+                'name'      => 'PrivateGame',
                 'external_ip'  => '40.114.196.95',
             ]
         ];

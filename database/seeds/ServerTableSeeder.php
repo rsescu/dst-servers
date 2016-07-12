@@ -19,7 +19,7 @@ class ServerTableSeeder extends Seeder
                 'host_id'   => 1,
                 'user_id'   => 1,
                 'name'      => 'Greii Greilor',
-                'run_script'  => 'sh ~/run_dst_rby_cluster.sh',
+                'run_script'  => 'sh ~/run_dst_rby_cluster_tmux.sh',
             ]
         ];
         DB::table('servers')->insert($servers);

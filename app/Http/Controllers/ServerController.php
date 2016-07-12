@@ -51,15 +51,16 @@ class ServerController extends Controller
             $admin_to_servers[$key]->name = $server->name;
             $admin_to_servers[$key]->game = $server->isOfGame->name;
             $admin_to_servers[$key]->host = $server->hostedOn->name;
-            $running = self::serverCommands($server->hostedOn->external_ip, "screen -list");
+            $running = self::serverCommands($server->hostedOn->external_ip, "tmux ls");
 
             if($running === false) {
                 $admin_to_servers[$key]->status = 0;
             }
-            elseif(preg_match('/No Sockets found in/', $running)) {
+            //ideally search for preset tmux session name
+            elseif(preg_match('/failed to connect to server/', $running)) {
                 $admin_to_servers[$key]->status = 1;
             }
-            elseif(preg_match('/\d{3,6}\.(\d|\w)*\s*\(\d{2}\/\d{2}\/\d{4}\s\d{2}\:\d{2}\:\d{2}\s(PM|AM)\)/', $running)) {
+            elseif(preg_match('/DST_rby/', $running)) {
                 $admin_to_servers[$key]->status = 2;
             }
         }
@@ -82,9 +83,7 @@ class ServerController extends Controller
     {
         $server = Server::find($serverId);
         self::serverCommands($server->hostedOn->external_ip,
-            'screen -S DST_rby_cave -X stuff $\'\003\';screen -S DST_rby_master -X stuff $\'\003\'');
-        sleep(2);
-        self::serverCommands($server->hostedOn->external_ip, "killall screen");
+            'sh stop_dst_rby_cluster_tmux.sh');
         return \Redirect::to('servers');
     }
 

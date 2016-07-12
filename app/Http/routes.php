@@ -20,14 +20,6 @@ Route::get('/servers', "ServerController@index");
 
 Route::get('/hosts', "HostsController@index");
 
-
-Route::get('/auth', function() {
-    $running = \App\Http\Controllers\ServerController::serverCommands("40.114.196.95", "screen -list");
-    $aa = []; preg_match('/\d{3,6}\.(\d|\w)*\s*\(\d{2}\/\d{2}\/\d{4}\s\d{2}\:\d{2}\:\d{2}\s(PM|AM)\)/', $running, $aa);
-    echo $running."<br>";
-    var_dump($aa);
-});
-
 Route::put('/hosts/{vmName}/start', "HostsController@startHost");
 
 Route::put('/hosts/{vmName}/stop', "HostsController@stopHost");

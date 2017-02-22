@@ -2,8 +2,8 @@
 ip: "192.168.10.10"
 memory: 1024
 cpus: 1
-hostname: vagrant
-name: vagrant
+hostname: dstserver
+name: dst-server
 provider: virtualbox
 
 authorize: ~/.ssh/id_rsa.pub
